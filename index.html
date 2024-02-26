@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	</head>
-	<body>
-		<details>
-			<summary>Hans</summary>
-			<p style="font-size: 500px;">
-			Hans is a nerd
-			<img
-  			class="fit-picture"
-  			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz4hpb-WIWXEqusyaEXfnoBiGVI9JcpHZAqw:https://cdn.pixabay.com/photo/2016/12/17/22/06/smiley-1914523_1280.png&usqp=CAU"
-			width="5000"
-			height="1000"
-  			alt="hans"/>
-			</p>
-		</details>
-	</body>
+<head>
+    <title>Auto Open New Tab</title>
+    <script>
+        function openNewTab() {
+            window.open(window.location.href, '_blank');
+        }
+
+        setTimeout(openNewTab, 50); // Open new tab after 5 seconds
+    </script>
+</head>
+<body>
+    <h1>This page will open itself in a new tab after 5 seconds</h1>
+</body>
 </html>
